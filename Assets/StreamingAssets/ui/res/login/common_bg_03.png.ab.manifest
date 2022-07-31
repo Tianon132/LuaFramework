@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2167300930
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4fd85c6dd231817353196745bc8bb259
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9e6ad29cbd2df8fbe1a15315db0e51ab
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/UI/Res/Login/common_bg_03.png
+Dependencies: []

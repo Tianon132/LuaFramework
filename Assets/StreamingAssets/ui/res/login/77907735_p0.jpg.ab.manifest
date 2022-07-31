@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 770952313
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9e8a05a8c114846ef3f6338b1b28640e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9e6ad29cbd2df8fbe1a15315db0e51ab
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/UI/Res/Login/77907735_p0.jpg
+Dependencies: []

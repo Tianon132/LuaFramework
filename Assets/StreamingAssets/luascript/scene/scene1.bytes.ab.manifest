@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3158478011
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 009d710b50aeeec350fd3eb97d557c13
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/LuaScript/Scene/Scene1.bytes
+Dependencies: []

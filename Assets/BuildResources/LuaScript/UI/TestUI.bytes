@@ -1,0 +1,16 @@
+function OnInit()
+    print("lua OnInit success")
+end
+
+function Update()
+    print("lua Update success")
+end
+
+function OnOpen()
+    print("lua OnOpen success")
+    Manager.Scene:LoadScene("Scene01", "Scene.Scene1")
+end
+
+function OnClose()
+    print("lua OnClose success")
+end

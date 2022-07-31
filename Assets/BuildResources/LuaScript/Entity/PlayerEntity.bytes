@@ -1,0 +1,23 @@
+function OnInit()
+    print("lua Init PlayerEntity...")
+end
+
+function Update()
+    print("lua Update PlayerEntity...")
+
+    if Input.GetKey(KeyCode.W) then
+        self.transform:Translate(self.transform.forward * Time.deltaTime)
+    end
+
+    if Input.GetKey(KeyCode.S) then
+        self.transform:Translate(-self.transform.forward * Time.deltaTime)
+    end
+end
+
+function OnShow()
+    print("lua Show PlayerEntity...")
+end
+
+function OnClose()
+    print("lua Close PlayerEntity...")
+end

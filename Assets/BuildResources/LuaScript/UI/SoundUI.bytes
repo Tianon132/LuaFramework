@@ -1,0 +1,88 @@
+function OnInit()
+    --print("lua Sound OnInit success")
+end
+
+function Update()
+    --print("lua Update success")
+end
+
+function OnOpen()
+    print("lua OnOpen success")
+
+    local ButtonsTran = self.transform:Find("Buttons").transform
+    local SlidersTran = self.transform:Find("Sliders").transform
+
+    --绑定Button与方法
+    local ButtonMusicPlay = ButtonsTran:Find("ButtonMusicPlay"):GetComponent("Button");
+    local ButtonMusicStop = ButtonsTran:Find("ButtonMusicStop"):GetComponent("Button");
+    local ButtonMusicPause = ButtonsTran:Find("ButtonMusicPause"):GetComponent("Button");
+    local ButtonMusicUnPause = ButtonsTran:Find("ButtonMusicUnPause"):GetComponent("Button");
+    local ButtonSoundPlay = ButtonsTran:Find("ButtonSoundPlay"):GetComponent("Button");
+    local SliderMusic = SlidersTran:Find("SliderMusic"):GetComponent("Slider")
+    local SliderSound = SlidersTran:Find("SliderSound"):GetComponent("Slider")
+
+    local ButtonPoolTest = ButtonsTran:Find("ButtonPoolTest"):GetComponent("Button")
+    local ButtonClose = ButtonsTran:Find("ButtonClose"):GetComponent("Button")
+
+    ButtonMusicPlay:OnClickSet(
+        function ()
+            Manager.Sound:PlayMusic("Wordless Cliffs.mp3")
+        end
+    )
+
+    ButtonMusicStop:OnClickSet(
+        function ()
+            Manager.Sound:StopMusic()
+        end
+    )
+
+    ButtonMusicPause:OnClickSet(
+        function ()
+            Manager.Sound:PauseMusic()
+        end
+    )
+
+    ButtonMusicUnPause:OnClickSet(
+        function ()
+            Manager.Sound:UnPauseMusic()
+        end
+    )
+
+    ButtonSoundPlay:OnClickSet(
+        function ()
+            Manager.Sound:PlaySound("sfx_click1.mp3")
+        end
+    )
+
+    SliderMusic:OnValueChangedSet(
+        function (value)
+            Manager.Sound:SetMusicVolume(value)
+        end
+    )
+
+    SliderSound:OnValueChangedSet(
+        function (value)
+            Manager.Sound:SetSoundVolume(value)
+        end
+    )
+
+    SliderMusic.value = Manager.Sound.MusicVolume
+    SliderSound.value = Manager.Sound.SoundVolume
+
+    ButtonPoolTest:OnClickSet(
+        function ()
+            Manager.UI:OpenUI("Login/PoolTestUI", "UI", "UI.SoundUI")
+        end
+    )
+
+    ButtonClose:OnClickSet(
+        --self:OnClose()    --这里错误，相当于直接调用了，而不是点击触发
+        function ()
+            self:OnClose()
+        end
+    )
+end
+
+function OnClose()
+    print("lua OnClose success")
+end

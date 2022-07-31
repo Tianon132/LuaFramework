@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3289140543
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 07aeb4ccc95dee8d53ce1e2a3b12456d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/LuaScript/UI/TestUI.bytes
+Dependencies: []

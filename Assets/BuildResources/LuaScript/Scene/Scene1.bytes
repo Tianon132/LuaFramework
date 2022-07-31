@@ -1,0 +1,24 @@
+function OnInit()
+    print("lua Init Scene1...")
+end
+
+function Update()
+    print("lua Update Scene1...")
+end
+
+function OnEnter()
+    print("lua OnEnter Scene1...")
+    Manager.Scene:LoadScene("Scene02", "Scene.Scene2")
+end
+
+function OnQuit()
+    print("lua OnQuit Scene1...")
+end
+
+function OnActive()
+    print("lua OnActive Scene1...")
+end
+
+function OnInActive()
+    print("lua OnInActive Scene1...")
+end

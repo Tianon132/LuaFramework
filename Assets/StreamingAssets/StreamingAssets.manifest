@@ -1,0 +1,99 @@
+ManifestFileVersion: 0
+CRC: 343355158
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: audio/music/wordless cliffs.mp3.ab
+      Dependencies: {}
+    Info_1:
+      Name: audio/sound/sfx_click1.mp3.ab
+      Dependencies: {}
+    Info_2:
+      Name: luascript/main.bytes.ab
+      Dependencies: {}
+    Info_3:
+      Name: luascript/entity/playerentity.bytes.ab
+      Dependencies: {}
+    Info_4:
+      Name: luascript/scene/scene1.bytes.ab
+      Dependencies: {}
+    Info_5:
+      Name: luascript/scene/scene2.bytes.ab
+      Dependencies: {}
+    Info_6:
+      Name: luascript/ui/soundui.bytes.ab
+      Dependencies: {}
+    Info_7:
+      Name: luascript/ui/testui.bytes.ab
+      Dependencies: {}
+    Info_8:
+      Name: model/mat/mat01.mat.ab
+      Dependencies: {}
+    Info_9:
+      Name: model/mat/mat02.mat.ab
+      Dependencies: {}
+    Info_10:
+      Name: model/mat/mat03.mat.ab
+      Dependencies: {}
+    Info_11:
+      Name: model/prefabs/player.prefab.ab
+      Dependencies:
+        Dependency_0: model/mat/mat01.mat.ab
+    Info_12:
+      Name: scene/scene01.unity.ab
+      Dependencies:
+        Dependency_0: model/mat/mat02.mat.ab
+    Info_13:
+      Name: scene/scene02.unity.ab
+      Dependencies:
+        Dependency_0: model/mat/mat03.mat.ab
+    Info_14:
+      Name: ui/prefabs/testui.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/login/1614224970520.png.ab
+        Dependency_1: ui/res/login/background.png.ab
+        Dependency_2: ui/res/login/radio_100.png.ab
+    Info_15:
+      Name: ui/prefabs/login/loginui.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/login/1614224970520.png.ab
+        Dependency_1: ui/res/login/radio_100.png.ab
+    Info_16:
+      Name: ui/prefabs/login/pooltestui.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/login/1614224970520.png.ab
+        Dependency_1: ui/res/login/background.png.ab
+        Dependency_2: ui/res/login/radio_100.png.ab
+    Info_17:
+      Name: ui/res/login/1614224970520.png.ab
+      Dependencies: {}
+    Info_18:
+      Name: ui/res/login/44873217_p0.jpg.ab
+      Dependencies: {}
+    Info_19:
+      Name: ui/res/login/77907735_p0.jpg.ab
+      Dependencies: {}
+    Info_20:
+      Name: ui/res/login/background.png.ab
+      Dependencies: {}
+    Info_21:
+      Name: ui/res/login/button_150.png.ab
+      Dependencies: {}
+    Info_22:
+      Name: ui/res/login/common_bg_01.png.ab
+      Dependencies: {}
+    Info_23:
+      Name: ui/res/login/common_bg_02.png.ab
+      Dependencies: {}
+    Info_24:
+      Name: ui/res/login/common_bg_03.png.ab
+      Dependencies: {}
+    Info_25:
+      Name: ui/res/login/lxx.jpg.ab
+      Dependencies: {}
+    Info_26:
+      Name: ui/res/login/radio_100.png.ab
+      Dependencies: {}
+    Info_27:
+      Name: ui/res/login/slider_handle.png.ab
+      Dependencies: {}

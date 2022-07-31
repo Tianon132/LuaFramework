@@ -1,0 +1,24 @@
+function OnInit()
+    print("lua Init Scene2...")
+end
+
+function Update()
+    print("lua Update Scene2...")
+end
+
+function OnEnter()
+    print("lua OnEnter Scene2...")
+    Manager.Entity:OpenEntity(PathUtil.GetPrefabPath("Player"), "Player", "Entity.PlayerEntity")
+end
+
+function OnQuit()
+    print("lua OnQuit Scene2...")
+end
+
+function OnActive()
+    print("lua OnActive Scene2...")
+end
+
+function OnInActive()
+    print("lua OnInActive Scene2...")
+end

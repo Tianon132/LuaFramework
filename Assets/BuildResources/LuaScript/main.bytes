@@ -1,0 +1,41 @@
+Manager = CS.Manager
+PathUtil = CS.PathUtil
+Input = CS.UnityEngine.Input
+KeyCode = CS.UnityEngine.KeyCode
+Time = CS.UnityEngine.Time
+
+local UI_Group = 
+{
+    "Main",
+    "UI",
+    "Box"
+}
+
+local Entity_Group = 
+{
+    "Player",
+    "Monster",
+    "Effect"
+}
+
+Manager.UI:SetUIGroup(UI_Group)
+Manager.Entity:SetEntityGroup(Entity_Group)
+
+function Main()
+    print("Hello Lua...")
+
+    --Manager.UI:OpenUI("TestUI", "UI.TestUI") --前者是prefab名，后者是luaName
+                                             --方法与类之间用：冒号
+
+                                            
+    
+   -- Manager.UI:OpenUI("TestUI", "UI", "UI.TestUI")
+    --Manager.UI:OpenUI("Login/LoginUI", "Main", "UI.TestUI")
+    --Manager.Entity:OpenEntity(PathUtil.GetPrefabPath("Player"), "Player", "Entity.PlayerEntity")
+
+    --Manager.UI:OpenUI("Login/LoginUI", "Main", "UI.TestUI")
+
+    Manager.UI:OpenUI("Login/PoolTestUI", "Main", "UI.SoundUI")   --Sound部分
+end
+
+Main()
